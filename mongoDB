@@ -1,0 +1,11 @@
+db.products.updateMany({_id:{$gt:0}}, {$set:{reviews: [{authorName: "Ahmad Ali",rating: 3.5,review: "good product"}] }});
+
+db.products.insertOne({
+    _id:3,
+    name:"Rubber",
+    price: 5, 
+    vendor: "Ali", 
+    reviews:[
+        {authorName:"Jawad",rating:4, review:"best Rubber"}
+    ]}
+);
